@@ -3,209 +3,327 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Maira | Senior Data Analyst Portfolio</title>
+<title>Maira | Senior Analytics Engineer</title>
 <style>
+:root {
+  --bg: #0f172a;
+  --panel: #111827;
+  --card: #1e293b;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --primary: #6366f1;
+  --accent: #22d3ee;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, Segoe UI, sans-serif;
 }
 
 body {
-    background-color: #f8fafc;
-    color: #0f172a;
-    line-height: 1.65;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
 }
 
 a {
-    color: #2563eb;
-    text-decoration: none;
+  text-decoration: none;
+  color: inherit;
 }
 
 .container {
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    padding: 40px 0;
+  max-width: 1150px;
+  margin: auto;
+  padding: 50px 20px;
 }
 
+/* ---------- HEADER ---------- */
 header {
-    text-align: center;
-    margin-bottom: 50px;
+  text-align: center;
+  margin-bottom: 80px;
 }
 
 header h1 {
-    font-size: 3rem;
-    color: #2563eb;
+  font-size: 3.5rem;
+  color: var(--accent);
 }
 
 header p {
-    font-size: 1.15rem;
-    margin-top: 12px;
-    color: #334155;
+  max-width: 850px;
+  margin: 16px auto;
+  color: var(--muted);
+  font-size: 1.1rem;
 }
 
-.section {
-    margin-bottom: 60px;
+.badges {
+  margin-top: 20px;
 }
 
-.section h2 {
-    font-size: 2rem;
-    margin-bottom: 25px;
-    color: #2563eb;
-    border-left: 4px solid #2563eb;
-    padding-left: 12px;
-}
-
-.card {
-    background: #ffffff;
-    padding: 25px;
-    border-radius: 12px;
-    margin-bottom: 30px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-}
-
-.card h3 {
-    margin-bottom: 12px;
-    color: #0f172a;
-}
-
-.card p {
-    margin-bottom: 10px;
-}
-
-.card ul {
-    margin-left: 20px;
-    margin-bottom: 10px;
-}
-
-.card li {
-    margin-bottom: 6px;
+.badges span {
+  display: inline-block;
+  background: rgba(99,102,241,0.15);
+  color: #c7d2fe;
+  padding: 7px 14px;
+  margin: 6px;
+  border-radius: 20px;
+  font-weight: 600;
 }
 
 .btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background: #2563eb;
-    color: #ffffff;
-    border-radius: 6px;
-    font-weight: bold;
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 26px;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  color: #020617;
+  font-weight: 800;
+  border-radius: 10px;
 }
 
+/* ---------- SECTIONS ---------- */
+.section {
+  margin-bottom: 100px;
+}
+
+.section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 35px;
+  color: #c7d2fe;
+  border-left: 5px solid var(--accent);
+  padding-left: 15px;
+}
+
+/* ---------- CARDS ---------- */
+.card {
+  background: var(--card);
+  border: 1px solid rgba(34,211,238,0.15);
+  padding: 30px;
+  border-radius: 18px;
+  margin-bottom: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 60px rgba(34,211,238,0.15);
+}
+
+.card h3 {
+  color: #e0e7ff;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+.card ul {
+  margin: 15px 0 10px 20px;
+}
+
+.card li {
+  margin-bottom: 8px;
+}
+
+/* ---------- FILES / MODULES ---------- */
+.files {
+  background: #111827;
+  border: 1px dashed var(--accent);
+  padding: 15px;
+  border-radius: 12px;
+  font-family: monospace;
+  font-size: 0.95rem;
+  color: var(--accent);
+  margin-top: 12px;
+  overflow-x: auto;
+}
+
+/* ---------- CONTACT ---------- */
 footer {
-    text-align: center;
-    padding: 30px 0;
-    border-top: 1px solid #cbd5e1;
-    color: #64748b;
+  text-align: center;
+  color: var(--muted);
+  padding-top: 60px;
+  border-top: 1px solid rgba(148,163,184,0.15);
 }
 </style>
 </head>
-<body>
 
+<body>
 <div class="container">
 
 <header>
-    <h1>Maira</h1>
-    <p><strong>Senior Data Analyst | Power BI • SQL • Python • Cloud Analytics (Snowflake, Redshift, Airflow)</strong></p>
-    <p>Transforming complex datasets into actionable insights, dashboards, and predictive analytics to support business, healthcare, and product decisions. .</p>
-    <a href="cv.pdf" class="btn" download>⬇ Download CV</a>
+  <h1>Maira</h1>
+  <p><strong>Senior Analytics Engineer | Snowflake • dbt • Airflow • Python • Cloud Analytics</strong></p>
+  <p>5+ years in data & analytics, 2 years freelance experience delivering production-grade analytics and data engineering platforms. Experienced in Snowflake, Redshift, Kafka, Airflow, Power BI, and Python-based pipelines.</p>
+
+  <div class="badges">
+    <span>Snowflake</span>
+    <span>dbt</span>
+    <span>Airflow</span>
+    <span>Power BI</span>
+    <span>AWS</span>
+    <span>Python</span>
+    <span>SQL</span>
+    <span>Redshift</span>
+    <span>Kafka</span>
+  </div>
+
+  <a class="btn" href="cv.pdf" download>⬇ Download CV</a>
 </header>
 
-<!-- Skills Section -->
+<!-- SKILLS -->
 <section class="section">
-    <h2>Technical & Domain Skills</h2>
-    <div class="card">
-        <h3>Technical Skills</h3>
-        <ul>
-            <li>Power BI (DAX, Data Modeling, KPI Dashboards)</li>
-            <li>SQL (joins, CTEs, analytical queries, Redshift, Snowflake,Supabase)</li>
-            <li>Python (Pandas, NumPy, automation, ML basics)</li>
-            <li>Airflow (ETL pipelines & workflow automation)</li>
-            <li>Tableau, Excel, Power Query</li>
-        </ul>
-
-        <h3>Domain Expertise</h3>
-        <ul>
-            <li>Healthcare & Clinical Analytics (trial data, patient outcomes)</li>
-            <li>Product & Business Analytics</li>
-            <li>Sales & Revenue Intelligence</li>
-            <li>Real Estate Investment & ROI Analysis</li>
-        </ul>
-
-        <h3>Professional Skills</h3>
-        <ul>
-            <li>Stakeholder communication & requirements gathering</li>
-            <li>KPI definition & performance tracking</li>
-            <li>Remote collaboration & documentation</li>
-            <li>Problem-solving & actionable insights delivery</li>
-        </ul>
-    </div>
+<h2>Technical & Domain Skills</h2>
+<div class="card">
+<ul>
+  <li>Snowflake (Streams, Tasks, Incremental Loading)</li>
+  <li>dbt (Models, Incremental, Tests, Exposures)</li>
+  <li>Airflow (DAG Orchestration, Alerts, Retries)</li>
+  <li>Power BI (Dashboards, DAX, KPIs)</li>
+  <li>Python (ETL, Automation, Consumers)</li>
+  <li>SQL & Redshift (Analytics, Data Modeling, Optimization)</li>
+  <li>Kafka & S3 (Streaming, Event Ingestion, Data Lake)</li>
+  <li>Healthcare, Sales, Product & Real Estate Analytics</li>
+</ul>
+</div>
 </section>
 
-<!-- Projects Section -->
+<!-- CASE STUDIES -->
 <section class="section">
-    <h2>Featured Projects</h2>
+<h2>Production Case Studies</h2>
 
-    <div class="card">
-        <h3>📌 Clinical Trial Analytics Dashboard</h3>
-        <p>Power BI dashboard analyzing real-world clinical research data to support enrollment, patient outcomes, and predictive risk insights.</p>
-        <ul>
-            <li>Tracked enrollment, retention, and dropout trends</li>
-            <li>Analyzed patient demographics and outcomes</li>
-            <li>Designed predictive KPIs with DAX for operational decisions</li>
-        </ul>
-        <a href="clinic.pbix" class="btn" download>⬇ Download Report</a>
-    </div>
+<div class="card">
+<h3>🚀 Real-Time Sales Analytics Platform</h3>
+<p>Built a near real-time analytics platform reducing reporting lag from 24 hours to 5 minutes.</p>
 
-    <div class="card">
-        <h3>📌 Hospital Performance & Patient Outcomes</h3>
-        <p>Healthcare analytics solution leveraging predictive models to optimize hospital efficiency and patient care.</p>
-        <ul>
-            <li>Monitored admissions, discharges, readmission rates</li>
-            <li>Measured length of stay & mortality trends</li>
-            <li>Developed AI-assisted KPIs for executive decisions</li>
-        </ul>
-        <a href="hospital.pbix" class="btn" download>⬇ Download Report</a>
-    </div>
+<ul>
+<li>Snowflake: Streams, Tasks & Incremental loading</li>
+<li>dbt: Staging & fact models with tests and exposures</li>
+<li>Airflow: DAG orchestration with alerts</li>
+<li>Power BI: Executive dashboards & KPIs</li>
+</ul>
 
-    <div class="card">
-        <h3>📌 Sales & Revenue Intelligence (Cloud ETL)</h3>
-        <p>Integrated ETL pipelines using Airflow & Snowflake to automate sales & revenue dashboards with predictive analytics.</p>
-        <ul>
-            <li>Analyzed lead source ROI & cost per acquisition</li>
-            <li>Built predictive revenue forecasts and performance dashboards</li>
-            <li>Automated reporting, reducing manual effort by 30%</li>
-        </ul>
-        <a href="sales.pbix" class="btn" download>⬇ Download Report</a>
-    </div>
+<div class="files">
+/sales-analytics/<br>
+├── airflow/dag_sales_pipeline.py<br>
+├── dbt/models/stg_orders.sql<br>
+├── dbt/models/fct_sales.sql<br>
+├── snowflake/streams_tasks.sql<br>
+└── powerbi/sales_dashboard.pbix
+</div>
+</div>
 
-    <div class="card">
-        <h3>📌 Real Estate Investment Analytics (Redshift)</h3>
-        <p>Investment analytics solution on Redshift supporting ROI, cash flow, and risk assessment for multi-city investments.</p>
-        <ul>
-            <li>Optimized queries & built predictive models for ROI decisions</li>
-            <li>Automated dashboards for executive decision-making</li>
-            <li>Data-driven insights for investment strategy</li>
-        </ul>
-        <a href="realestate.pbix" class="btn" download>⬇ Download Report</a>
-    </div>
+<div class="card">
+<h3>⚡ Real-Time Data Engineering Platform</h3>
+<p>Designed a scalable streaming + batch data platform for multi-domain analytics.</p>
 
+<ul>
+<li>Kafka-based event ingestion & retry handling</li>
+<li>Python consumers processing streaming data</li>
+<li>S3 Data Lake: raw → curated layers</li>
+<li>Snowflake & Redshift analytics layers</li>
+<li>Airflow DAGs for orchestration & alerts</li>
+</ul>
+
+<div class="files">
+/realtime-platform/<br>
+├── kafka/event_producer.py<br>
+├── consumers/kafka_consumer.py<br>
+├── s3/load_to_s3.py<br>
+├── redshift/copy.sql<br>
+└── airflow/dag_streaming_pipeline.py
+</div>
+</div>
 </section>
 
-<!-- Contact Section -->
+<!-- FEATURED PROJECTS -->
 <section class="section">
-    <h2>Contact</h2>
-    <div class="card">
-        <p>📧 Email: <a href="mailto:mairazzzz120@gmail.com">mairazzzz120@gmail.com</a></p>
-        <p>🌍 Open to Remote, Cloud Analytics, AI, and Product Data Opportunities</p>
-        <p>💻 Portfolio: <a href="https://maira148.github.io/myportfolio3/" target="_blank">maira148.github.io/myportfolio3/</a></p>
-    </div>
+<h2>Featured Analytics Projects</h2>
+
+<div class="card">
+<h3>📊 Clinical Trial Analytics Dashboard</h3>
+<ul>
+<li>Enrollment & dropout analysis</li>
+<li>Patient outcome KPIs</li>
+</ul>
+<div class="files">
+/clinical-analytics/<br>
+├── data/clinical_trials.csv<br>
+├── sql/analysis.sql<br>
+└── powerbi/clinical_dashboard.pbix
+</div>
+</div>
+
+<div class="card">
+<h3>🏥 Hospital Performance & Patient Outcomes</h3>
+<ul>
+<li>Admissions & readmission metrics</li>
+<li>Operational KPIs</li>
+</ul>
+<div class="files">
+/hospital-analytics/<br>
+├── sql/kpi_queries.sql<br>
+└── powerbi/hospital_dashboard.pbix
+</div>
+</div>
+
+<div class="card">
+<h3>🏢 Real Estate Investment Analytics</h3>
+<ul>
+<li>ROI & cash-flow analysis</li>
+<li>Multi-city investment insights</li>
+</ul>
+<div class="files">
+/real-estate/<br>
+├── redshift/schema.sql<br>
+├── sql/roi_analysis.sql<br>
+└── powerbi/realestate_dashboard.pbix
+</div>
+</div>
+
+<div class="card">
+<h3>📈 Sales & Revenue Intelligence</h3>
+<ul>
+<li>Automated dashboards with predictive metrics</li>
+<li>Revenue forecasting & KPIs</li>
+</ul>
+<div class="files">
+/sales-intelligence/<br>
+├── airflow/dag_sales_etl.py<br>
+├── sql/revenue_metrics.sql<br>
+└── powerbi/sales_dashboard.pbix
+</div>
+</div>
+
+<div class="card">
+<h3>📦 Product Analytics Dashboard</h3>
+<ul>
+<li>User behavior & funnel analysis</li>
+<li>Retention & churn KPIs</li>
+</ul>
+<div class="files">
+/product-analytics/<br>
+├── data/events.json<br>
+├── sql/funnel_analysis.sql<br>
+└── powerbi/product_dashboard.pbix
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section class="section">
+<h2>Contact</h2>
+<div class="card">
+<p>📧 <a href="mailto:mairazzzz120@gmail.com">mairazzzz120@gmail.com</a></p>
+<p>🌍 Open to Remote & International Analytics Engineer Roles</p>
+<p>💻 <a href="https://maira148.github.io/myportfolio3/" target="_blank">Live Portfolio</a></p>
+</div>
 </section>
 
 <footer>
-    <p>© 2026 Maira | Senior Data Analyst | Cloud & AI Analytics</p>
+© 2026 Maira | Senior Data Analyst & Analytics Engineer
 </footer>
 
 </div>
