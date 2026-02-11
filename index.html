@@ -15,138 +15,34 @@
   --accent: #22d3ee;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Inter, Segoe UI, sans-serif;
-}
+* { margin:0; padding:0; box-sizing:border-box; font-family:Inter, Segoe UI, sans-serif; }
 
-body {
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.7;
-}
+body { background:var(--bg); color:var(--text); line-height:1.7; }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
+a { text-decoration:none; color:inherit; }
 
-.container {
-  max-width: 1150px;
-  margin: auto;
-  padding: 50px 20px;
-}
+.container { max-width:1150px; margin:auto; padding:50px 20px; }
 
-/* ---------- HEADER ---------- */
-header {
-  text-align: center;
-  margin-bottom: 80px;
-}
+header { text-align:center; margin-bottom:80px; }
+header h1 { font-size:3.5rem; color:var(--accent); }
+header p { max-width:850px; margin:16px auto; color:var(--muted); font-size:1.1rem; }
+.badges { margin-top:20px; }
+.badges span { display:inline-block; background:rgba(99,102,241,0.15); color:#c7d2fe; padding:7px 14px; margin:6px; border-radius:20px; font-weight:600; }
+.btn { display:inline-block; margin-top:30px; padding:12px 26px; background:linear-gradient(90deg, var(--primary), var(--accent)); color:#020617; font-weight:800; border-radius:10px; }
 
-header h1 {
-  font-size: 3.5rem;
-  color: var(--accent);
-}
+.section { margin-bottom:100px; }
+.section h2 { font-size:2.2rem; margin-bottom:35px; color:#c7d2fe; border-left:5px solid var(--accent); padding-left:15px; }
 
-header p {
-  max-width: 850px;
-  margin: 16px auto;
-  color: var(--muted);
-  font-size: 1.1rem;
-}
+.card { background: var(--card); border:1px solid rgba(34,211,238,0.15); padding:30px; border-radius:18px; margin-bottom:40px; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.card:hover { transform: translateY(-6px); box-shadow:0 25px 60px rgba(34,211,238,0.15); }
+.card h3 { color:#e0e7ff; margin-bottom:12px; }
+.card p { color:var(--muted); margin-bottom:10px; }
+.card ul { margin:15px 0 10px 20px; }
+.card li { margin-bottom:8px; }
 
-.badges {
-  margin-top: 20px;
-}
+.files { background:#111827; border:1px dashed var(--accent); padding:15px; border-radius:12px; font-family:monospace; font-size:0.95rem; color:var(--accent); margin-top:12px; overflow-x:auto; }
 
-.badges span {
-  display: inline-block;
-  background: rgba(99,102,241,0.15);
-  color: #c7d2fe;
-  padding: 7px 14px;
-  margin: 6px;
-  border-radius: 20px;
-  font-weight: 600;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 12px 26px;
-  background: linear-gradient(90deg, var(--primary), var(--accent));
-  color: #020617;
-  font-weight: 800;
-  border-radius: 10px;
-}
-
-/* ---------- SECTIONS ---------- */
-.section {
-  margin-bottom: 100px;
-}
-
-.section h2 {
-  font-size: 2.2rem;
-  margin-bottom: 35px;
-  color: #c7d2fe;
-  border-left: 5px solid var(--accent);
-  padding-left: 15px;
-}
-
-/* ---------- CARDS ---------- */
-.card {
-  background: var(--card);
-  border: 1px solid rgba(34,211,238,0.15);
-  padding: 30px;
-  border-radius: 18px;
-  margin-bottom: 40px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 25px 60px rgba(34,211,238,0.15);
-}
-
-.card h3 {
-  color: #e0e7ff;
-  margin-bottom: 12px;
-}
-
-.card p {
-  color: var(--muted);
-  margin-bottom: 10px;
-}
-
-.card ul {
-  margin: 15px 0 10px 20px;
-}
-
-.card li {
-  margin-bottom: 8px;
-}
-
-/* ---------- FILES / MODULES ---------- */
-.files {
-  background: #111827;
-  border: 1px dashed var(--accent);
-  padding: 15px;
-  border-radius: 12px;
-  font-family: monospace;
-  font-size: 0.95rem;
-  color: var(--accent);
-  margin-top: 12px;
-  overflow-x: auto;
-}
-
-/* ---------- CONTACT ---------- */
-footer {
-  text-align: center;
-  color: var(--muted);
-  padding-top: 60px;
-  border-top: 1px solid rgba(148,163,184,0.15);
-}
+footer { text-align:center; color:var(--muted); padding-top:60px; border-top:1px solid rgba(148,163,184,0.15); }
 </style>
 </head>
 
@@ -155,8 +51,8 @@ footer {
 
 <header>
   <h1>Maira</h1>
-  <p><strong>Senior Analytics Engineer | Snowflake • dbt • Airflow • Python • Cloud Analytics</strong></p>
-  <p>5+ years in data & analytics, 2 years freelance experience delivering production-grade analytics and data engineering platforms. Experienced in Snowflake, Redshift, Kafka, Airflow, Power BI, and Python-based pipelines.</p>
+  <p><strong>Senior Analytics Engineer | Snowflake • dbt • Airflow • Python • Power BI • Cloud Analytics</strong></p>
+  <p>Experienced in building production-grade analytics pipelines, real-time dashboards, and data engineering platforms across healthcare, sales, product, and finance. Skilled in Snowflake, Redshift, Kafka, Airflow, Python, SQL, dbt, and Power BI.</p>
 
   <div class="badges">
     <span>Snowflake</span>
@@ -173,16 +69,15 @@ footer {
   <a class="btn" href="cv.pdf" download>⬇ Download CV</a>
 </header>
 
-<!-- SKILLS -->
 <section class="section">
 <h2>Technical & Domain Skills</h2>
 <div class="card">
 <ul>
-  <li>Snowflake (Streams, Tasks, Incremental Loading)</li>
-  <li>dbt (Models, Incremental, Tests, Exposures)</li>
-  <li>Airflow (DAG Orchestration, Alerts, Retries)</li>
-  <li>Power BI (Dashboards, DAX, KPIs)</li>
-  <li>Python (ETL, Automation, Consumers)</li>
+  <li>Snowflake (Streams, Tasks, Time Travel, Incremental Loading)</li>
+  <li>dbt (Models, Incremental, Macros, Tests, Exposures)</li>
+  <li>Airflow (DAG Orchestration, Alerts, Retries, SLAs)</li>
+  <li>Power BI (Dashboards, DAX, KPIs, Data Modeling)</li>
+  <li>Python (ETL, Automation, Kafka Consumers)</li>
   <li>SQL & Redshift (Analytics, Data Modeling, Optimization)</li>
   <li>Kafka & S3 (Streaming, Event Ingestion, Data Lake)</li>
   <li>Healthcare, Sales, Product & Real Estate Analytics</li>
@@ -190,21 +85,18 @@ footer {
 </div>
 </section>
 
-<!-- CASE STUDIES -->
 <section class="section">
 <h2>Production Case Studies</h2>
 
 <div class="card">
 <h3>🚀 Real-Time Sales Analytics Platform</h3>
 <p>Built a near real-time analytics platform reducing reporting lag from 24 hours to 5 minutes.</p>
-
 <ul>
-<li>Snowflake: Streams, Tasks & Incremental loading</li>
-<li>dbt: Staging & fact models with tests and exposures</li>
-<li>Airflow: DAG orchestration with alerts</li>
-<li>Power BI: Executive dashboards & KPIs</li>
+  <li>Snowflake: Streams, Tasks & Incremental loading</li>
+  <li>dbt: Staging & fact models with tests and exposures</li>
+  <li>Airflow: DAG orchestration with alerts & retries</li>
+  <li>Power BI: Executive dashboards & KPIs</li>
 </ul>
-
 <div class="files">
 /sales-analytics/<br>
 ├── airflow/dag_sales_pipeline.py<br>
@@ -217,16 +109,14 @@ footer {
 
 <div class="card">
 <h3>⚡ Real-Time Data Engineering Platform</h3>
-<p>Designed a scalable streaming + batch data platform for multi-domain analytics.</p>
-
+<p>Designed scalable streaming + batch analytics platform for multiple domains.</p>
 <ul>
-<li>Kafka-based event ingestion & retry handling</li>
-<li>Python consumers processing streaming data</li>
-<li>S3 Data Lake: raw → curated layers</li>
-<li>Snowflake & Redshift analytics layers</li>
-<li>Airflow DAGs for orchestration & alerts</li>
+  <li>Kafka-based ingestion & retry handling</li>
+  <li>Python consumers processing streaming data</li>
+  <li>S3 Data Lake: raw → curated layers</li>
+  <li>Snowflake & Redshift analytics layers</li>
+  <li>Airflow DAG orchestration with SLAs & alerts</li>
 </ul>
-
 <div class="files">
 /realtime-platform/<br>
 ├── kafka/event_producer.py<br>
@@ -238,15 +128,14 @@ footer {
 </div>
 </section>
 
-<!-- FEATURED PROJECTS -->
 <section class="section">
 <h2>Featured Analytics Projects</h2>
 
 <div class="card">
 <h3>📊 Clinical Trial Analytics Dashboard</h3>
 <ul>
-<li>Enrollment & dropout analysis</li>
-<li>Patient outcome KPIs</li>
+  <li>Enrollment & dropout analysis</li>
+  <li>Patient outcome KPIs</li>
 </ul>
 <div class="files">
 /clinical-analytics/<br>
@@ -259,8 +148,8 @@ footer {
 <div class="card">
 <h3>🏥 Hospital Performance & Patient Outcomes</h3>
 <ul>
-<li>Admissions & readmission metrics</li>
-<li>Operational KPIs</li>
+  <li>Admissions & readmission metrics</li>
+  <li>Operational KPIs</li>
 </ul>
 <div class="files">
 /hospital-analytics/<br>
@@ -272,8 +161,8 @@ footer {
 <div class="card">
 <h3>🏢 Real Estate Investment Analytics</h3>
 <ul>
-<li>ROI & cash-flow analysis</li>
-<li>Multi-city investment insights</li>
+  <li>ROI & cash-flow analysis</li>
+  <li>Multi-city investment insights</li>
 </ul>
 <div class="files">
 /real-estate/<br>
@@ -286,8 +175,8 @@ footer {
 <div class="card">
 <h3>📈 Sales & Revenue Intelligence</h3>
 <ul>
-<li>Automated dashboards with predictive metrics</li>
-<li>Revenue forecasting & KPIs</li>
+  <li>Automated dashboards with predictive metrics</li>
+  <li>Revenue forecasting & KPIs</li>
 </ul>
 <div class="files">
 /sales-intelligence/<br>
@@ -300,8 +189,8 @@ footer {
 <div class="card">
 <h3>📦 Product Analytics Dashboard</h3>
 <ul>
-<li>User behavior & funnel analysis</li>
-<li>Retention & churn KPIs</li>
+  <li>User behavior & funnel analysis</li>
+  <li>Retention & churn KPIs</li>
 </ul>
 <div class="files">
 /product-analytics/<br>
@@ -312,7 +201,6 @@ footer {
 </div>
 </section>
 
-<!-- CONTACT -->
 <section class="section">
 <h2>Contact</h2>
 <div class="card">
@@ -323,7 +211,7 @@ footer {
 </section>
 
 <footer>
-© 2026 Maira | Senior Data Analyst & Analytics Engineer
+© 2026 Maira | Senior Analytics Engineer
 </footer>
 
 </div>
